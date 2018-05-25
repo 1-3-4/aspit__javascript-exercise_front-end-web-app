@@ -1,0 +1,20 @@
+{
+  "name": "aspit__javascript-exercise_front-end-web-app",
+  "version": "1.0.0",
+  "description": "School project.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "gulp",
+    "web-app"
+  ],
+  "author": "134",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1"
+  }
+}
