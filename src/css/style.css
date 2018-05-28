@@ -1,0 +1,49 @@
+body, menu, li, a, button {
+    display: block;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 1);
+}
+.list-of-btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 1em;
+}
+button {
+    box-sizing: border-box;
+    margin: 1em;
+    border-radius: 5px;
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn_type_text {
+    color: #5b01ff;
+}
+.btn_type_text:hover {
+    background-color: rgba(91, 1, 255, 0.1);
+}
+.btn_type_text:focus {
+    background-color: rgba(91, 1, 225, 0.25);
+}
+.btn_type_outlined {
+    border-width: 1px;
+    border-style: solid;
+    border-color: silver;
+    color: #5b01ff;
+}
+.btn_type_outlined:hover {
+    background-color: rgba(91, 1, 255, 0.1);
+}
+.btn_type_outlined:focus {
+    background-color: rgba(91, 1, 225, 0.25);
+}

@@ -8,14 +8,15 @@ function Book( slots ) {
 // Define and initialize the class-level property Book.instances:
 Book.instances = {};
 
-Book.convertRow2Obj = function () {
+Book.convertRow2Obj = function ( bookRow ) {
     const book = new Book( bookRow ); // Added 'const'.
     return book;
 }
 
 // Function to take books in Local Storage into main memory.
 Book.loadAll = function () {
-    let i = 0; // Divided variables unto multiple lines. Changed 'var' to 'let'.
+    // Divided variables unto multiple lines. Changed 'var' to 'let'.
+    // let bookNum = 0; // Changed varbookNumable name from 'i' to bookNum to avoid conflicts. Outcommented, because it isn't needed.
     let keys = [];
     let bookTableString = "";
     let bookTable = {};
@@ -34,8 +35,8 @@ Book.loadAll = function () {
         keys = Object.keys( bookTable );
         console.log( keys.length + " books loaded.");
         // Convert each row in the map into a Book object and store the object in 'Book.instances':
-        for ( var i = 0; i < keys.length; i++ ) {
-            const key = keys[i]; // Added 'const'.
+        for ( var bookNum = 0; bookNum < keys.length; bookNum++ ) {
+            const key = keys[bookNum]; // Added 'const'.
             Book.instances[key] = Book.convertRow2Obj( bookTable[key] );
         }
     }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Minimal JS front-end App Example</title>
+        <script type="text/javascript" src="./js/controller/initialize.js"></script>
+        <script type="text/javascript" src="./js/model/Book.js"></script>
+        <script type="text/javascript" src="./js/view/delete-book.js"></script>
+        <script type="text/javascript">
+            window.addEventListener( "load", publicLibrary.view.deleteBook.setupUserInterface );
+        </script>
+    </head>
+    <body>
+        <h1>Public Library: Delete a book record</h1>
+        <form id="Book">
+            <p>
+            <label>
+                Select book:
+                <select name="selectBook"><option value=""> --- </option></select>
+            </label>
+            </p>
+            <p>
+                <button type="button" name="commit">Delete</button>
+            </p>
+        </form>
+        <nav>
+          <a href="index.html">Back to main menu</a>
+        </nav>
+    </body>
+</html>

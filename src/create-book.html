@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Minimal JS front-end App Example</title>
+        <script type="text/javascript" src="./js/controller/initialize.js"></script>
+        <script type="text/javascript" src="./js/model/Book.js"></script>
+        <script type="text/javascript" src="./js/view/create-book.js"></script>
+        <script type="text/javascript">
+            window.addEventListener( "load", publicLibrary.view.createBook.setupUserInterface );
+        </script>
+    </head>
+    <body>
+        <h1>Public Library: Create a new book record</h1>
+        <form id="book">
+            <p>
+                <label>
+                    ISBN:
+                    <input name="isbn">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Title:
+                    <input name="title">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Year:
+                    <input name="year">
+                </label>
+            </p>
+            <p>
+                <button class="btn_type_contained" type="button" name="commit">Save</button>
+            </p>
+        </form>
+        <nav>
+            <a href="index.html">Back to main menu</a>
+        </nav>
+    </body>
+</html>
