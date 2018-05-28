@@ -4,14 +4,42 @@
         <meta charset="utf-8">
         <title>Public Library | Front-End Web App</title>
         <style media="screen">
-            menu, li, button {
+            body, menu, li, a, button {
                 display: block;
                 margin: 0;
                 outline: 0;
                 border: 0;
                 padding: 0;
+                font-family: sans-serif;
                 list-style-type: none;
+                text-decoration: none;
                 background-color: rgba(255, 255, 255, 1);
+            }
+            .list-of-btns {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                align-content: flex-start;
+                padding: 1em;
+            }
+            button {
+                box-sizing: border-box;
+                margin: 1em;
+                padding: 1em;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .btn_type_text {
+
+            }
+            .btn_type_outlined {
+                border-width: 1px;
+                border-style: solid;
+                border-color: silver;
+                border-radius: 5px;
+                color: #5b01ff;
             }
         </style>
         <script type="text/javascript" src="./js/model/Book.js"></script>
@@ -20,24 +48,24 @@
         <h1>Public Library</h1>
         <h2>An Example of a Minimal JavaScript front-end App.</h2>
         <p>This app supports the following operations:</p>
-        <menu>
+        <menu class="list-of-btns">
             <li>
-                <a href="#"><button type="button">List all books.</button></a>
+                <a href="#"><button class="btn_type_outlined" type="button">Add a new book</button></a>
             </li>
             <li>
-                <a href="#"><button type="button">Add a new book.</button></a>
+                <a href="#"><button class="btn_type_outlined" type="button">Update a book</button></a>
             </li>
             <li>
-                <a href="#"><button type="button">Update a book.</button></a>
+                <a href="#"><button class="btn_type_outlined" type="button">Delete a book</button></a>
             </li>
             <li>
-                <a href="#"><button type="button">Delete a book.</button></a>
+                <a href="#"><button class="btn_type_outlined" type="button" onclick="#">Create test data</button></a>
             </li>
             <li>
-                <a href="#"><button type="button" onclick="#">Clear database.</button></a>
+                <a href="#"><button class="btn_type_text" type="button">List all books</button></a>
             </li>
             <li>
-                <a href="#"><button type="button" onclick="#">Create test data.</button></a>
+                <a href="#"><button class="btn_type_text" type="button" onclick="#">Clear database</button></a>
             </li>
         </menu>
     </body>
