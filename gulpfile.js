@@ -63,7 +63,7 @@ gulp.task('watch', ['html', 'css', 'js'], function () {
 	livereload.listen();
 	gulp.watch(paths.srcHTML, ['html']);
 	// gulp.watch(paths.srcPHP, ['php']);
-	gulp.watch(paths.srcSCSS, ['css']);
+	gulp.watch(paths.srcCSS, ['css']);
 	gulp.watch(paths.srcJS, ['js']);
 	// gulp.watch(paths.srcIMG, ['img']);
 });
