@@ -1,0 +1,11 @@
+.btn_type_outlined {
+    @extend %reset__button;
+    // @extend %button_has_in-common;
+    @extend .btn_type_text;
+    border-width: 1px;
+    border-style: solid;
+    border-color: silver;
+    // color: #5b01ff;
+    // &:hover { background-color: rgba(91, 1, 255, 0.1); }
+    // &:focus { background-color: rgba(91, 1, 225, 0.25); }
+}

@@ -7,28 +7,46 @@
         <script type="text/javascript" src="./js/model/Book.js"></script>
     </head>
     <body>
-        <h1>Public Library</h1>
-        <h2>An Example of a Minimal JavaScript front-end App.</h2>
-        <p>This app supports the following operations:</p>
-        <menu class="list-of-btns">
+        <header>
+            <h1>Public Library</h1>
+            <h2>An Example of a Minimal JavaScript front-end App.</h2>
+            <p>This app supports the following operations:</p>
+        </header>
+        <menu class="menu_has_buttons">
             <li>
-                <a href="list-books.html"><button class="btn_type_text" type="button">List all books</button></a>
+                <a href="list-books.html" class="menu__link_is_inside-btn">
+                    <button class="btn_type_text" type="button">List all books</button>
+                </a>
             </li>
             <li>
-                <a href="create-book.html"><button class="btn_type_outlined" type="button">Add a new book</button></a>
+                <a href="create-book.html" class="menu__link_is_inside-btn">
+                    <button class="btn_type_outlined" type="button">Add a new book</button>
+                </a>
             </li>
             <li>
-                <a href="update-book.html"><button class="btn_type_outlined" type="button">Update a book</button></a>
+                <a href="update-book.html" class="menu__link_is_inside-btn">
+                    <button class="btn_type_outlined" type="button">Update a book</button>
+                </a>
             </li>
             <li>
-                <a href="delete-book.html"><button class="btn_type_outlined" type="button">Delete a book</button></a>
+                <a href="delete-book.html" class="menu__link_is_inside-btn">
+                    <button class="btn_type_outlined" type="button">Delete a book</button>
+                </a>
             </li>
             <li>
-                <a href="#"><button class="btn_type_text" type="button" onclick="Book.createTestData()">Create test data</button></a>
+                <a href="#" class="menu__link_is_inside-btn">
+                    <button class="btn_type_text" type="button" onclick="Book.createTestData()">Create test data</button>
+                </a>
             </li>
             <li>
-                <a href="#"><button class="btn_type_text" type="button" onclick="Book.clearData()">Clear database</button></a>
+                <a href="#" class="menu__link_is_inside-btn">
+                    <button class="btn_type_text" type="button" onclick="Book.clearData()">Clear database</button>
+                </a>
             </li>
         </menu>
+        <main id="ajax-container">
+
+        </main>
+        <script type="text/javascript" src="./js/model/Ajax.js"></script>
     </body>
 </html>

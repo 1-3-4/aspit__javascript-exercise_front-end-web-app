@@ -1,0 +1,23 @@
+%reset {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    color: inherit;
+}
+%reset__button {
+    @extend %reset;
+}
+%reset__link {
+    @extend %reset;
+    text-decoration: none;
+}
+%reset__list {
+    @extend %reset;
+    list-style-type: none;
+}
